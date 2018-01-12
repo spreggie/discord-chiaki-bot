@@ -11,10 +11,9 @@ client.on("ready", () => {
   console.log(`Bot has started, with ${client.users.size} users, in ${client.channels.size} channels of ${client.guilds.size} guilds.`);
   // Example of changing the bot's playing game to something useful. `client.user` is what the
   // docs refer to as the "ClientUser".
-  client.user.setStatus('idle');
-  client.user.setGame('#AcidCat7952');
-  // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
-});
+  client.user.setStatus('dnd');
+  client.user.setGame(`#AcidCat7952`);
+ }
 
 
 client.on("message", async message => {
