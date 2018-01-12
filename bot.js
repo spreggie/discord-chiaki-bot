@@ -102,8 +102,8 @@ client.on("message", async message => {
     message.channel.send(`:wave: **${member.user.tag}** *byl zabanován administrátorem* **${message.author.tag}** *z důvodu:* **${reason}**`);
   }
 
-  if(command === "idtest") {
-    message.channel.send(`${client.user.get.id}`);
+  if(command === "help") {
+    message.channel.send(`...coming veeery soon, fam.`);
   }
 
   if(command === "purge") {
