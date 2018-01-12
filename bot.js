@@ -114,12 +114,12 @@ client.on("message", async message => {
 
     // Ooooh nice, combined conditions. <3
     if(!deleteCount || deleteCount < 2 || deleteCount > 100)
-      return message.reply("Please provide a number between 2 and 100 for the number of messages to delete");
+      return message.reply(":do_not_litter: Prosím napiš, kolik zpráv chceš smazat, minimálně však od **2-100**");
 
     // So we get our messages, and delete them. Simple enough, right?
     const fetched = await message.channel.fetchMessages({count: deleteCount});
     message.channel.bulkDelete(fetched)
-      .catch(error => message.reply(`Couldn't delete messages because of: ${error}`));
+      .catch(error => message.reply(`:warning: **Žádná zpráva nebyla smazána kvůli ${error}**`));
   }
 
    // First, we need to make sure that it isn't reading a message that the bot is sending.
