@@ -12,7 +12,7 @@ client.on("ready", () => {
   // Example of changing the bot's playing game to something useful. `client.user` is what the
   // docs refer to as the "ClientUser".
   client.user.setStatus('dnd')
-  client.user.setGame('@AcidCat0069', 'https://www.twitch.tv/twitch', 1)
+  // client.user.setGame('@AcidCat0069', 'https://www.twitch.tv/twitch', 1)
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
  });
 
