@@ -7,7 +7,7 @@ const config = require("./config.json");
 
 client.on('ready', () => {
    client.user.setStatus('dnd')
-   client.user.setPresence({ game: { name: 'Mám rád vlaky🚂🚂', type: 0 } });
+   client.user.setPresence({ game: { name: 'Mám rád vlaky🚂🚂', type: 1 } });
 });
   // client.user.setGame('@AcidCat#0069', 'https://www.twitch.tv/twitch', 1)
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
@@ -15,11 +15,11 @@ client.on('ready', () => {
 // Create an event listener for new guild members
  client.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
-  const channel = member.guild.channels.find('name', 'welcome');
+  const channel = member.guild.channels.find('name', 'boti-a-hudba');
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
-   channel.send(`👋 Ahoj, ${member}, vítej na Discord serveru **SuperPařba.eu**! Pro případnou pomoc se neváhej ozvat správcům nebo administrátorům do SZ či v chatu <:ThonkCool:376464878971518977>`);
+   channel.send(`<@!323182446835269633> :fuckyou::fuckyou::fuckyou:`);
  });
 
 client.on("message", async message => {
