@@ -7,7 +7,7 @@ const config = require("./config.json");
 
 client.on('ready', () => {
    client.user.setStatus('dnd')
-   client.user.setPresence({ game: { name: 'Mám rád vlaky🚂🚂', type: 3 } });
+   client.user.setPresence({ game: { name: 'Mám rád vlaky🚂🚂', 'LISTENING' } });
 });
   // client.user.setGame('@AcidCat#0069', 'https://www.twitch.tv/twitch', 1)
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
@@ -48,7 +48,7 @@ client.on("message", async message => {
     const m = await message.channel.send("Ping?");
     m.edit(`Pong! :ping_pong: Latence = **${m.createdTimestamp - message.createdTimestamp}ms** || API Latence = **${Math.round(client.ping)}ms**`);
   }
-   
+
    if(command === "avatar") {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);
