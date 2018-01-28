@@ -114,14 +114,14 @@ client.on("message", async message => {
 
   if(command === "help") {
     message.channel.send(`🎬 Obyčejné příkazy 🎬
-      **//avatar** - `přímý odkaz na tvůj avatar`
-      **//ping** - `spočítá ping bota mezi odeslanou zprávou a její následnou úpravou`
-      **//help** - `zobrazí tuhle nápovědu`
-      **//say** - `zopakuje odeslanou zprávu`
+      **//avatar** - přímý odkaz na tvůj avatar
+      **//ping** - spočítá ping bota mezi odeslanou zprávou a její následnou úpravou
+      **//help** - zobrazí tuhle nápovědu
+      **//say** - zopakuje odeslanou zprávu
 
       💻 Administrátorské příkazy 💻
-      **//kick** - `vyhodí uživatele ze serveru`
-      **//ban** - `permanentně zabanuje uživatele``);
+      **//kick** - vyhodí uživatele ze serveru
+      **//ban** - permanentně zabanuje uživatele`);
   }
 
   if(command === "purge") {
