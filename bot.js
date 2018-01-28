@@ -22,11 +22,6 @@ client.on('ready', () => {
    channel.send(`👋 Ahoj, ${member}, vítej na Discord serveru **SuperPařba.eu**! Pro případnou pomoc se neváhej ozvat správcům nebo administrátorům do SZ či v chatu <:ThonkCool:376464878971518977>`);
  });
 
-  if(command === "avatar") {
-    // Send the user's avatar URL
-    message.reply(message.author.avatarURL);
-  }
-
 client.on("message", async message => {
   // This event will run on every single message received, from any channel or DM.
 
@@ -52,6 +47,11 @@ client.on("message", async message => {
     // The second ping is an average latency between the bot and the websocket server (one-way, not round-trip)
     const m = await message.channel.send("Ping?");
     m.edit(`Pong! :ping_pong: Latence = **${m.createdTimestamp - message.createdTimestamp}ms** || API Latence = **${Math.round(client.ping)}ms**`);
+  }
+   
+   if(command === "avatar") {
+    // Send the user's avatar URL
+    message.reply(message.author.avatarURL);
   }
 
   if(command === "say") {
