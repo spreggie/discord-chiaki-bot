@@ -10,7 +10,7 @@ client.on('ready', () => {
 });
 
   client.user.setStatus('dnd');
-  client.user.setGame("Mám rád vlaky🚂🚂");
+  client.user.setPresence({ game: { name: 'Mám rád vlaky🚂🚂', type: 0 } });
 });
   // client.user.setGame('@AcidCat#0069', 'https://www.twitch.tv/twitch', 1)
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
@@ -28,8 +28,6 @@ client.on('guildMemberAdd', member => {
 - Veškeré novinky, změny apod. nalezneš v 👉 <#388455111879426050> <#375759954600263680>`);
 });
 
-// Create an event listener for messages
-client.on('message', message => {
   if(command === "avatar") {
     // Send the user's avatar URL
     message.reply(message.author.avatarURL);
