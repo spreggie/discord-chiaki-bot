@@ -6,12 +6,35 @@ const config = require("./config.json");
 // config.prefix contains the message prefix.
 
 client.on('ready', () => {
+  console.log('I am ready!');
+});
+
   client.user.setStatus('dnd');
   client.user.setGame("Mám rád vlaky🚂🚂");
+});
   // client.user.setGame('@AcidCat#0069', 'https://www.twitch.tv/twitch', 1)
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
- });
+ 
+// Create an event listener for new guild members
+client.on('guildMemberAdd', member => {
+  // Send the message to a designated channel on a server:
+  const channel = member.guild.channels.find('name', 'welcome');
+  // Do nothing if the channel wasn't found on this server
+  if (!channel) return;
+  // Send the message, mentioning the member
+  channel.send(`👋 Ahoj, ${member}, vítej na Discord serveru **SuperPařba.eu**! Pro případnou pomoc se neváhej ozvat správcům nebo administrátorům do SZ či v chatu <:ThonkCool:376464878971518977>   
+- Pro rychlou pomoc nás stačí označit přes **`@nick`** a nebo **`@role`** 
+- Základní manipulace s boty: `XYpříkaz`, kde `XY` je prefix uvedený v závorce před nickem bota, takový typický příkaz je `XYhelp` ⚠ **příkazy používat prosím v kanálu <#376082752170098690>**
+- Veškeré novinky, změny apod. nalezneš v 👉 <#388455111879426050> <#375759954600263680>`);
+});
 
+// Create an event listener for messages
+client.on('message', message => {
+  if(command === "avatar") {
+    // Send the user's avatar URL
+    message.reply(message.author.avatarURL);
+  }
+});
 
 client.on("message", async message => {
   // This event will run on every single message received, from any channel or DM.
