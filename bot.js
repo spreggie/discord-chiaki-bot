@@ -19,7 +19,7 @@ client.on('ready', () => {
   // Do nothing if the channel wasn't found on this server
   if (!channel) return;
   // Send the message, mentioning the member
-   channel.send(`<@!323182446835269633> :fuckyou: `);
+   channel.send(`<@!323182446835269633> :---)))`);
  });
 
 client.on("message", async message => {
