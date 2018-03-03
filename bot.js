@@ -8,7 +8,7 @@ const config = require("./config.json");
 client.on('ready', () => {
    
    client.user.setStatus('dnd')
-   client.user.setGame('Mám rád vlaky🚂🚂', 'https://www.twitch.tv/twitch', 1)
+   client.user.setStreaming('Mám rád vlaky🚂🚂', 'https://www.twitch.tv/twitch', 1);
    // client.user.setPresence({ game: { name: 'Ameliho vlaky🚂🚂', type: 3 } });
 });
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
