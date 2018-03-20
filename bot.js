@@ -7,7 +7,7 @@ const config = require("./config.json");
 
 client.on('ready', () => {
         client.user.setStatus('dnd')
-        client.user.setGame('Mám rád vlaky🚂🚂', 'https://www.twitch.tv/acidcat_', 1);
+        client.user.setGame('🚂🚂🚂 dej +rep redžímu, protože je to šéf', 'https://www.twitch.tv/acidcat_', 1);
 });
   // client.user.setPresence({ game: { name: 'Ameliho vlaky🚂🚂', type: 3 } });
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
@@ -77,7 +77,7 @@ client.on("message", async message => {
     if(!member)
       return message.reply("zadej prosím nick člena tohoto serveru, jinak nic nevykonám :unamused:");
     if(!member.kickable)
-      return message.reply("tenhle uživatel nelze vyhodit! Má buď vyšší roli, a nebo nemám pravomoce na vyhazov :smirk:");
+      return message.reply("tenhle uživatel nelze vyhodit! Má buď vyšší roli, je admin a nebo nemám pravomoce na vyhazov :smirk:");
 
     // slice(1) removes the first part, which here should be the user mention!
     let reason = args.slice(1).join(' ');
@@ -101,7 +101,7 @@ client.on("message", async message => {
     if(!member)
       return message.reply("zadej prosím nick člena tohoto serveru, jinak nic nevykonám :unamused:");
     if(!member.bannable)
-      return message.reply("tenhle uživatel nelze zabanovat! Má buď vyšší roli, a nebo nemám pravomoce na banování :smirk:");
+      return message.reply("tenhle uživatel nelze zabanovat! Má buď vyšší roli, je admin a nebo nemám pravomoce na banování :smirk:");
 
     let reason = args.slice(1).join(' ');
     if(!reason)
