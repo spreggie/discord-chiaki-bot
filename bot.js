@@ -7,7 +7,7 @@ const config = require("./config.json");
 
 client.on('ready', () => {
         client.user.setStatus('dnd')
-        client.user.setGame('dej +rep redžímu, je to šéf😎😎', 'https://www.twitch.tv/acidcat_', 1);
+        client.user.setGame('paštika', 'https://www.twitch.tv/acidcat_', 1);
 });
   // client.user.setPresence({ game: { name: 'Ameliho vlaky🚂🚂', type: 3 } });
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
