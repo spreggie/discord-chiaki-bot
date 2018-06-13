@@ -153,7 +153,7 @@ client.on("message", async message => {
   }
 });
 
-bot.on("message", (message) => {
+client.on("message", (message) => {
   if(message.content === "cs") {
     message.channel.send("cs :)");
   }
