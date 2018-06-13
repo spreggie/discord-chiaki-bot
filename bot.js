@@ -153,5 +153,113 @@ client.on("message", async message => {
   }
 });
 
+bot.on("message", (message) => {
+  if(message.content === "cs") {
+    message.channel.send("cs :)");
+  }
+  if(message.content === "Cs") {
+    message.channel.send("Cs :)");
+  }
+  if(message.content === "čau") {
+    message.channel.send("nazdar");
+  }
+  if(message.content === "Čau") {
+    message.channel.send("Nazdar");
+  }
+  if(message.content === "jj") {
+    message.channel.send("nn");
+  }
+  if(message.content === "nn") {
+    message.channel.send("jj :D");
+  }
+  if(message.content === "coze") {
+    message.channel.send("lol coje");
+  }
+  if(message.content === "🤔") {
+    message.channel.send("👌🏻");
+  }
+  if(message.content === "&fish") {
+    message.channel.send("haHA neCHytIl XD xD");
+  }
+  if(message.content === "drz hubu") {
+    message.channel.send("nn ty xDDD :DDddd");
+  }
+  if(message.content === "jn") {
+    message.channel.send("ne no");
+  }
+  if(message.content === "jn") {
+    message.channel.send("ne no");
+  }
+  if(message.content === "strom") {
+    message.channel.send("keř :DDDDD XDDDDDD");
+  }
+  if(message.content === "dik") {
+    message.channel.send("nz");
+  }
+  if(message.content === "dík") {
+    message.channel.send("nz brácho");
+  }
+  if(message.content === "ban") {
+    message.channel.send("dostanes no");
+  }
+  if(message.content === "ses no") {
+    message.channel.send("ty ses");
+  }
+  if(message.content === "cS") {
+    message.channel.send("cS :DDD");
+  }
+  if(message.content === "haha") {
+    message.channel.send("HAHAHA");
+  }
+  if(message.content === "CS") {
+    message.channel.send("CS ;)");
+  }
+  if(message.content === "debilku") {
+    message.channel.send("sam ses debilek :P");
+  }
+  if(message.content === "debílku") {
+    message.channel.send("sám seš debílek :P");
+  }
+  if(message.content === "zabij se") {
+    message.channel.send("nn ty");
+  }
+  if(message.content === "Debilku") {
+    message.channel.send("Sam ses debilek :P");
+  }
+  if(message.content === "Debílku") {
+    message.channel.send("Sám seš debílek :P");
+  }
+  if(message.content === "reggie") {
+    message.channel.send("co chces hajzle");
+  }
+  if(message.content === "Reggie") {
+    message.channel.send("moje laska");
+  }
+  if(message.content === "reggi") {
+    message.channel.send("toho miluju");
+  }
+  if(message.content === "Reggi") {
+    message.channel.send("neotravuj ho");
+  }
+  if(message.content === "Ameli") {
+    message.channel.send("gej");
+  }
+  if(message.content === "ameli") {
+    message.channel.send("smrdi");
+  }
+  if(message.content === "co") {
+    message.channel.send("cozeco debilku");
+  }
+  if(message.content === "ahoj") {
+    message.channel.send("brej");
+  }
+  if(message.content === "Ahoj") {
+    message.channel.send("bry den");
+  }
+  if(message.content === "čus") {
+    message.channel.send("bambus");
+  }
+});
+
 // THIS  MUST  BE  THIS  WAY
 client.login(process.env.BOT_TOKEN);
