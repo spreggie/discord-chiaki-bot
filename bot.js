@@ -6,7 +6,7 @@ const config = require("./config.json");
 // config.prefix contains the message prefix.
 
 bot.on('ready', () => {
-        bot.user.setPresence({ game: { type: '3', name: 'paštika' }, status: 'dnd' })
+        bot.user.setPresence({ game: { type: 'WATCHING', name: 'paštika' }, status: 'dnd' })
         // client.user.setStatus('dnd')
         // client.user.setGame('paštika', 'https://www.twitch.tv/acidcat_', 1);
 });
