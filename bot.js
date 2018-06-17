@@ -1,5 +1,5 @@
 const Discord = require('discord.js');
-const client = new Discord.Client();
+const bot = new Discord.Client();
 
 // Here we load the config.json file that contains our token and our prefix values.
 const config = require("./config.json");
@@ -14,7 +14,7 @@ bot.on('ready', () => {
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
 
 // Create an event listener for new guild members
- client.on('guildMemberAdd', member => {
+ bot.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
   const channel = member.guild.channels.find('name', 'boti-a-hudba');
   // Do nothing if the channel wasn't found on this server
@@ -23,7 +23,7 @@ bot.on('ready', () => {
    channel.send(`<@!323182446835269633> debílek`);
  });
 
-client.on("message", async message => {
+ bot.on("message", async message => {
   // This event will run on every single message received, from any channel or DM.
 
   // It's good practice to ignore other bots. This also makes your bot ignore itself
@@ -154,7 +154,7 @@ client.on("message", async message => {
   }
 });
 
-client.on("message", (message) => {
+bot.on("message", (message) => {
   if(message.content === "cs") {
     message.channel.send("cs :)");
   }
@@ -260,4 +260,4 @@ client.on("message", (message) => {
 });
 
 // THIS  MUST  BE  THIS  WAY
-client.login(process.env.BOT_TOKEN);
+bot.login(process.env.BOT_TOKEN);
