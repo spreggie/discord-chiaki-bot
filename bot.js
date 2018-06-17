@@ -6,8 +6,9 @@ const config = require("./config.json");
 // config.prefix contains the message prefix.
 
 client.on('ready', () => {
-        client.user.setStatus('dnd')
-        client.user.setGame('paštika', 'https://www.twitch.tv/acidcat_', 1);
+        client.user.setPresence({ game: { type: 'LISTENING', name: 'paštika' }, status: 'dnd' })
+        // client.user.setStatus('dnd')
+        // client.user.setGame('paštika', 'https://www.twitch.tv/acidcat_', 1);
 });
   // client.user.setPresence({ game: { name: 'Ameliho vlaky🚂🚂', type: 3 } });
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
