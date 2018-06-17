@@ -178,9 +178,6 @@ client.on("message", (message) => {
   if(message.content === "🤔") {
     message.channel.send("👌🏻");
   }
-  if(message.content === "&fish") {
-    message.channel.send("haHA neCHytIl XD xD");
-  }
   if(message.content === "drz hubu") {
     message.channel.send("nn ty xDDD :DDddd");
   }
