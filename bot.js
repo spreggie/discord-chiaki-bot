@@ -1,12 +1,12 @@
 const Discord = require('discord.js');
-const bot = new Discord.Client();
+const client = new Discord.Client();
 
 // Here we load the config.json file that contains our token and our prefix values.
 const config = require("./config.json");
 // config.prefix contains the message prefix.
 
-bot.on('ready', () => {
-        bot.user.setPresence({ game: { type: 'WATCHING', name: 'paštika' }, status: 'dnd' })
+client.on('ready', () => {
+        bot.user.setPresence({ game: { type: 'LISTENING', name: 'paštika' }, status: 'dnd' })
         // client.user.setStatus('dnd')
         // client.user.setGame('paštika', 'https://www.twitch.tv/acidcat_', 1);
 });
@@ -14,7 +14,7 @@ bot.on('ready', () => {
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
 
 // Create an event listener for new guild members
- bot.on('guildMemberAdd', member => {
+ client.on('guildMemberAdd', member => {
   // Send the message to a designated channel on a server:
   const channel = member.guild.channels.find('name', 'boti-a-hudba');
   // Do nothing if the channel wasn't found on this server
@@ -23,7 +23,7 @@ bot.on('ready', () => {
    channel.send(`<@!323182446835269633> debílek`);
  });
 
- bot.on("message", async message => {
+ client.on("message", async message => {
   // This event will run on every single message received, from any channel or DM.
 
   // It's good practice to ignore other bots. This also makes your bot ignore itself
@@ -154,7 +154,7 @@ bot.on('ready', () => {
   }
 });
 
-bot.on("message", (message) => {
+client.on("message", (message) => {
   if(message.content === "cs") {
     message.channel.send("cs :)");
   }
@@ -260,4 +260,4 @@ bot.on("message", (message) => {
 });
 
 // THIS  MUST  BE  THIS  WAY
-bot.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);
