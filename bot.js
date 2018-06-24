@@ -12,11 +12,11 @@ client.on('ready', () => {
   // client.user.setPresence({ game: { name: 'Ameliho vlaky🚂🚂', type: 3 } });
   // client.user.setGame(`something ( ͡° ͜ʖ ͡°) || Jsem na ${client.guilds.size} serverech`, 'https://www.twitch.tv/logout', 1)
 
- client.on('guildMemberAdd', member => {
-  const channel = member.guild.channels.find('name', 'boti-a-hudba');
-  if (!channel) return;
-   channel.send(`<@!323182446835269633> debílek`);
- });
+ // client.on('guildMemberAdd', member => {
+ // const channel = member.guild.channels.find('name', 'boti-a-hudba');
+ // if (!channel) return;
+  // channel.send(`<@!323182446835269633> debílek`);
+ // });
 
  client.on("message", async message => {
 
