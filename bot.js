@@ -83,17 +83,30 @@ client.on('ready', () => {
   }
 
   if(command === "help") {
-    message.channel.send(` ```css🎬 Obyčejné příkazy 🎬
-      ```
-      **//avatar** - přímý odkaz na tvůj avatar
+message.channel.send({embed: {
+    color: 3447003,
+    author: {
+      name: client.user.username,
+      icon_url: client.user.avatarURL
+    },
+    fields: [{
+        name: "🎬 Základní příkazy 🎬",
+        value: "**//avatar** - přímý odkaz na tvůj avatar
       **//ping** - spočítá ping bota mezi odeslanou zprávou a její následnou úpravou
       **//help** - zobrazí tuhle nápovědu
-      **//say** - zopakuje odeslanou zprávu
-
-      ```css💻 Administrátorské příkazy 💻
-      ```
-      **//kick** - vyhodí uživatele ze serveru
-      **//ban** - permanentně zabanuje uživatele`);
+      **//say** - zopakuje odeslanou zprávu"
+      },
+      {
+        name: "💻 Administrátorské příkazy 💻",
+        value: "**//kick** - vyhodí uživatele ze serveru
+      **//ban** - permanentně zabanuje uživatele"
+      }
+    ],
+    timestamp: new Date(),
+    footer: {
+      icon_url: client.user.avatarURL,
+      text: "© AcidCat"
+    }
   }
 });
 
