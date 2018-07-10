@@ -83,7 +83,7 @@ client.on('ready', () => {
   }
 
   if(command === "help") {
-    message.channel.send(````css🎬 Obyčejné příkazy 🎬
+    message.channel.send(` ```css🎬 Obyčejné příkazy 🎬
       ```
       **//avatar** - přímý odkaz na tvůj avatar
       **//ping** - spočítá ping bota mezi odeslanou zprávou a její následnou úpravou
