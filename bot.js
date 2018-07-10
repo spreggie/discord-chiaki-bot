@@ -89,7 +89,7 @@ client.on('ready', () => {
        * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
        */
       .setColor("#FF0000")
-      .setFooter("© AcidCat", "client.user.avatarURL")
+      .setFooter("© AcidCat", "https://cdn.discordapp.com/avatars/323182446835269633/16aa258ba1314e582f4132c778841360.png")
       /*
        * Takes a Date object, defaults to current date.
        */
