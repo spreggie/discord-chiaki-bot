@@ -195,6 +195,15 @@ client.on("message", (message) => {
   if(message.content === "čus") {
     message.channel.send("bambus");
   }
+  if(message.content === "cus") {
+    message.channel.send("aHoj");
+  }
+  if(message.content === "ty me nezdrav") {
+    message.channel.send("nebo co :P");
+  }
+  if(message.content === "ty mě nezdrav") {
+    message.channel.send("nn budu xDD");
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
