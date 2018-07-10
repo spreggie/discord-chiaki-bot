@@ -23,7 +23,7 @@ client.on('ready', () => {
   if(message.author.bot) return;
 
   if(message.content.indexOf(config.prefix) !== 0) return;
-         
+
   const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
   const command = args.shift().toLowerCase();
 
@@ -91,15 +91,15 @@ message.channel.send({embed: {
     },
     fields: [{
         name: "🎬 Základní příkazy 🎬",
-        value: "**//avatar** - přímý odkaz na tvůj avatar
-      **//ping** - spočítá ping bota mezi odeslanou zprávou a její následnou úpravou
-      **//help** - zobrazí tuhle nápovědu
-      **//say** - zopakuje odeslanou zprávu"
+        value: "**//avatar** - přímý odkaz na tvůj avatar"
+        value: "**//ping** - spočítá ping bota mezi odeslanou zprávou a její následnou úpravou"
+        value: "**//help** - zobrazí tuhle nápovědu"
+        value: "**//say** - zopakuje odeslanou zprávu"
       },
       {
         name: "💻 Administrátorské příkazy 💻",
-        value: "**//kick** - vyhodí uživatele ze serveru
-      **//ban** - permanentně zabanuje uživatele"
+        value: "**//kick** - vyhodí uživatele ze serveru"
+        value: "**//ban** - permanentně zabanuje uživatele"
       }
     ],
     timestamp: new Date(),
