@@ -97,7 +97,7 @@ client.on('ready', () => {
       .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
       .addField("🎬 Základní příkazy 🎬", "**//avatar** - přímý odkaz na tvůj avatar                                                                                                  **//ping** - spočítá ping bota mezi odeslanou zprávou a její následnou úpravou                                                                    **//help** - zobrazí tuhle nápovědu                                                                                                                          **//say** - zopakuje odeslanou zprávu")
       .addField("💻 Administrátorské příkazy 💻", "**//kick** - vyhodí uživatele ze serveru                                                                                                                        **//ban** - permanentně zabanuje uživatele", true)
-      .addField(" ", "*... more coming soon*", true);
+      .addField("⠀", "*... more coming soon*", true);
 
       message.channel.send({embed});
 
