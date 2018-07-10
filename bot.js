@@ -87,7 +87,7 @@ client.on('ready', () => {
       /*
        * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
        */
-      .setColor(#ff0000)
+      .setColor(#FF0000)
       .setFooter("© AcidCat", "client.user.avatarURL")
       /*
        * Takes a Date object, defaults to current date.
