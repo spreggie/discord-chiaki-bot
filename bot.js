@@ -30,8 +30,7 @@ client.on('ready', () => {
 
 
   if(command === "ping") {
-    const m = await message.channel.send("Ping?");
-    m.edit(`Pong! :ping_pong: Latence = **${m.createdTimestamp - message.createdTimestamp}ms** || API Latence = **${Math.round(client.ping)}ms**`);
+    Discord.Client(ping);
   }
 
    if(command === "avatar") {
