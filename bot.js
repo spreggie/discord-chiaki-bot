@@ -5,7 +5,7 @@ const config = require("./config.json");
 
 client.on('ready', () => {
         console.log("PREPARE, GET SET, GO --- READY BOI :))");
-        client.user.setPresence({ game: { name: '//help', type: 3 }, status: 'dnd' });
+        client.user.setPresence({ game: { name: '//help', type: '3' }, status: 'dnd' });
         // client.user.setPresence({ game: { type: 'LISTENING', name: 'paštika' }, status: 'dnd' })
         // client.user.setStatus('dnd')
         // client.user.setGame('paštika', 'https://www.twitch.tv/acidcat_', 1);
@@ -89,7 +89,7 @@ client.on('ready', () => {
        * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
        */
       .setColor("#FF0000")
-      .setFooter("© AcidCat", "https://cdn.discordapp.com/avatars/323182446835269633/43f63233be758666447dc90b825dff82.png")
+      .setFooter("© AcidCat", "https://cdn.discordapp.com/avatars/323182446835269633/eff8f4195a37e453f3cd8b119ea2887f.png")
       /*
        * Takes a Date object, defaults to current date.
        */
