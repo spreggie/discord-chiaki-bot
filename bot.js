@@ -5,7 +5,7 @@ const config = require("./config.json");
 
 client.on('ready', () => {
         console.log("PREPARE, GET SET, GO --- READY BOI :))");
-        client.user.setPresence({ game: { name: '//help', type: '3' }, status: 'dnd' });
+        client.user.setPresence({ game: { name: '//help', type: 3 }, status: 'dnd' });
         // client.user.setPresence({ game: { type: 'LISTENING', name: 'paštika' }, status: 'dnd' })
         // client.user.setStatus('dnd')
         // client.user.setGame('paštika', 'https://www.twitch.tv/acidcat_', 1);
