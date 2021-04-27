@@ -217,6 +217,7 @@ client.on("message", (message) => {
     message.channel.send("nn budu xDD");
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
   if(message.content === ":D") {
     message.channel.send(":--D");
   }
@@ -250,6 +251,8 @@ client.on("message", (message) => {
   if(message.content === ":--D") {
     message.channel.send("!!! :--D");
   }
+=======
+>>>>>>> parent of ff384b4 (Update bot.js)
 =======
 >>>>>>> parent of ff384b4 (Update bot.js)
 });
