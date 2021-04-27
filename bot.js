@@ -99,13 +99,12 @@ client.on('ready', () => {
                 **//ping** - spočítá ping bota mezi odeslanou zprávou a její následnou úpravou   
                 **//help** - zobrazí tuhle nápovědu                                                                                                                          
                 **//say** - zopakuje odeslanou zprávu")
-                .addField("💻 Administrátorské příkazy 💻", "**//kick** - vyhodí uživatele ze serveru    
+                
+      .addField("💻 Administrátorské příkazy 💻", "**//kick** - vyhodí uživatele ze serveru    
                 **//ban** - permanentně zabanuje uživatele", true)
-                .addField("⠀", "*... more coming soon*", true);
-
-      message.channel.send({embed});
-
-    }
+      .addField("⠀", "*... more coming soon*", true);
+          message.channel.send({embed});
+}
   });
 
 client.on("message", (message) => {
