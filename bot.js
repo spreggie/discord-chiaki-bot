@@ -89,22 +89,19 @@ client.on('ready', () => {
        * Alternatively, use "#00AE86", [0, 174, 134] or an integer number.
        */
       .setColor("#FF0000")
-      .setFooter("© AcidCat", "https://cdn.discordapp.com/avatars/323182446835269633/d8b658bfd7e778fd23c273a72b3d60f7.png")
+      .setFooter("© AcidCat", "https://cdn.discordapp.com/avatars/323182446835269633/5b5add6a96e6222054ae23a1340a31a1.png")
       /*
        * Takes a Date object, defaults to current date.
        */
       .setTimestamp()
       .setURL("https://discord.js.org/#/docs/main/indev/class/RichEmbed")
-      .addField("🎬 Základní příkazy 🎬", "**//avatar** - přímý odkaz na tvůj avatar
-                **//ping** - spočítá ping bota mezi odeslanou zprávou a její následnou úpravou   
-                **//help** - zobrazí tuhle nápovědu                                                                                                                          
-                **//say** - zopakuje odeslanou zprávu")
-                
-      .addField("💻 Administrátorské příkazy 💻", "**//kick** - vyhodí uživatele ze serveru    
-                **//ban** - permanentně zabanuje uživatele", true)
+      .addField("🎬 Základní příkazy 🎬", "**//avatar** - přímý odkaz na tvůj avatar                                                                                                  **//ping** - spočítá ping bota mezi odeslanou zprávou a její následnou úpravou                                                                    **//help** - zobrazí tuhle nápovědu                                                                                                                          **//say** - zopakuje odeslanou zprávu")
+      .addField("💻 Administrátorské příkazy 💻", "**//kick** - vyhodí uživatele ze serveru                                                                                                                        **//ban** - permanentně zabanuje uživatele", true)
       .addField("⠀", "*... more coming soon*", true);
-          message.channel.send({embed});
-}
+
+      message.channel.send({embed});
+
+    }
   });
 
 client.on("message", (message) => {
@@ -216,45 +213,39 @@ client.on("message", (message) => {
   if(message.content === "ty mě nezdrav") {
     message.channel.send("nn budu xDD");
   }
-<<<<<<< HEAD
-<<<<<<< HEAD
   if(message.content === ":D") {
     message.channel.send(":--D");
   }
-  if(message.content === "luky") {
+  if(message.content === "luky) {
     message.channel.send("borec je to");
   }
-  if(message.content === "Luky") {
+  if(message.content === "Luky) {
     message.channel.send("borec je to");
   }
-  if(message.content === "nexty") {
+  if(message.content === "nexty) {
     message.channel.send("gej");
   }
-  if(message.content === "nexti") {
+  if(message.content === "nexti) {
     message.channel.send("depil");
   }
-  if(message.content === "Nexty") {
+  if(message.content === "Nexty) {
     message.channel.send("XD");
   }
-  if(message.content === "Nexti") {
+  if(message.content === "Nexti) {
     message.channel.send("znam ho");
   }
-  if(message.content === ":)") {
+  if(message.content === ":)) {
     message.channel.send("x)");
   }
-  if(message.content === "x)") {
+  if(message.content === "x)) {
     message.channel.send("x)))))");
   }
-  if(message.content === "?") {
+  if(message.content === "?) {
     message.channel.send("otazník");
   }
-  if(message.content === ":--D") {
+  if(message.content === ":--D) {
     message.channel.send("!!! :--D");
   }
-=======
->>>>>>> parent of ff384b4 (Update bot.js)
-=======
->>>>>>> parent of ff384b4 (Update bot.js)
 });
 
 client.login(process.env.BOT_TOKEN);
