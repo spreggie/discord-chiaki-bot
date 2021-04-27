@@ -213,6 +213,39 @@ client.on("message", (message) => {
   if(message.content === "ty mě nezdrav") {
     message.channel.send("nn budu xDD");
   }
+  if(message.content === ":D") {
+    message.channel.send(":--D");
+  }
+  if(message.content === "luky) {
+    message.channel.send("borec je to");
+  }
+  if(message.content === "Luky) {
+    message.channel.send("borec je to");
+  }
+  if(message.content === "nexty) {
+    message.channel.send("gej");
+  }
+  if(message.content === "nexti) {
+    message.channel.send("depil");
+  }
+  if(message.content === "Nexty) {
+    message.channel.send("XD");
+  }
+  if(message.content === "Nexti) {
+    message.channel.send("znam ho");
+  }
+  if(message.content === ":)) {
+    message.channel.send("x)");
+  }
+  if(message.content === "x)) {
+    message.channel.send("x)))))");
+  }
+  if(message.content === "?) {
+    message.channel.send("otazník");
+  }
+  if(message.content === ":--D) {
+    message.channel.send("!!! :--D");
+  }
 });
 
 client.login(process.env.BOT_TOKEN);
