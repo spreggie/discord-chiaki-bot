@@ -216,6 +216,7 @@ client.on("message", (message) => {
   if(message.content === "ty mě nezdrav") {
     message.channel.send("nn budu xDD");
   }
+<<<<<<< HEAD
   if(message.content === ":D") {
     message.channel.send(":--D");
   }
@@ -249,6 +250,8 @@ client.on("message", (message) => {
   if(message.content === ":--D") {
     message.channel.send("!!! :--D");
   }
+=======
+>>>>>>> parent of ff384b4 (Update bot.js)
 });
 
 client.login(process.env.BOT_TOKEN);
